@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>SignIn and SignUp page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="input" id="login_div">
+<h1>Login with Email and Password</h1>
+
+  <div id="emailtype">
+      <input type="email"  id="emailType" placeholder="Enter Your Email" required>
+  </div>
+<div id="passwordtype">
+  <input type="password" id="passwordType" placeholder="Enter Your password" required>
+</div>
+<button onclick="login()">Submit</button>
+</div>
+<div class="input">
+    <div id="user_div">
+        <h1>Welcome user</h1>
+        <p id="user_para"> you are successfully login your account please click logout button for logout 
+          <strong>Thaknyou</strong></p>
+          <button onclick="logout()">Lgout</button>   
+    </div>
+</div>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB3KmwQ-U3Z_h-pd9pQZ-A3P9Ba_KoAtEU",
+    authDomain: "login-page-be524.firebaseapp.com",
+    databaseURL: "https://login-page-be524.firebaseio.com",
+    projectId: "login-page-be524",
+    storageBucket: "",
+    messagingSenderId: "1010933390377",
+    appId: "1:1010933390377:web:cc7dca3465035add"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+       <script src="script.js"></script> 
+    </body>
+</html>
